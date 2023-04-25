@@ -1,0 +1,28 @@
+.btns {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  height: 50px;
+  width: 75px;
+  margin: 1px;
+  font-weight: 900;
+}
+
+.zero {
+  width: 152px;
+}
+
+.orange-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.orange-btns button {
+  background-color: orange;
+}
+
+.container {
+  width: max-content;
+}
