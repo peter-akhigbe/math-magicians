@@ -1,3 +1,5 @@
+import './Calculator.css';
+
 import Button from './Buttons';
 import Input from './Input';
 

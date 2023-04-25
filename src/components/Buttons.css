@@ -8,6 +8,7 @@ button {
   width: 75px;
   margin: 1px;
   font-weight: 900;
+  border: none;
 }
 
 .zero {
@@ -20,9 +21,5 @@ button {
 }
 
 .orange-btns button {
-  background-color: orange;
-}
-
-.container {
-  width: max-content;
+  background-color: #f5913e;
 }
