@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const DisplayResult = (props) => {
   const { value } = props;
 
-  return <input type="number" value={value} readOnly />;
+  return <input type="text" value={value} readOnly />;
 };
 
 DisplayResult.propTypes = {
