@@ -1,5 +1,4 @@
 import './Buttons.css';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
 
 const Buttons = (props) => {
@@ -49,11 +48,7 @@ const Buttons = (props) => {
 };
 
 Buttons.propTypes = {
-  clickHandler: PropTypes.func,
-};
-
-Buttons.defaultProps = {
-  clickHandler: () => {},
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default Buttons;

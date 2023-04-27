@@ -1,6 +1,5 @@
 import './DisplayResult.css';
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
 
 const DisplayResult = (props) => {
@@ -10,11 +9,7 @@ const DisplayResult = (props) => {
 };
 
 DisplayResult.propTypes = {
-  value: PropTypes.string,
-};
-
-DisplayResult.defaultProps = {
-  value: 'default value',
+  value: PropTypes.string.isRequired,
 };
 
 export default DisplayResult;
