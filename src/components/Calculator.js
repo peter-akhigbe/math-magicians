@@ -1,9 +1,7 @@
 import './Calculator.css';
-
 import React, { useState } from 'react';
 import Buttons from './Buttons';
 import DisplayResult from './DisplayResult';
-
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
