@@ -4,8 +4,8 @@ import Quotes from './components/Quotes';
 function App() {
   return (
     <div className="App">
-      <Calculator />
       <Quotes />
+      <Calculator />
     </div>
   );
 }

@@ -9,7 +9,7 @@ function Quotes() {
   const url = 'https://api.api-ninjas.com/v1/quotes';
   const key = 'qCIz2pqGeE44Bxi4EgERbw==X8SSHtTBmpNSkNz0';
 
-  useEffect(() => {
+  const fetcher = () => {
     fetch(url, {
       method: 'GET',
       headers: {
@@ -25,15 +25,17 @@ function Quotes() {
         setError(error);
         setLoading(false);
       });
-  }, []);
+  };
+
+  useEffect(fetcher, []);
 
   return (
     <div className="quote-container">
       <p className="quote">
-        {loading ? 'Loading...' : data.quote || `Error: ${error.message}`}
+        {loading ? 'Loading...' : `${data ? data.quote : error}`}
       </p>
       <p className="author">
-        {loading === false && error === null ? `- ${data.author}` : ''}
+        {!loading && data ? `- ${data.author}` : null}
       </p>
     </div>
   );
