@@ -4,5 +4,7 @@ input {
   background-color: grey;
   text-align: right;
   color: white;
-  border: none;
+  font-weight: 900;
+  border: 10px solid transparent;
+  box-sizing: border-box;
 }
