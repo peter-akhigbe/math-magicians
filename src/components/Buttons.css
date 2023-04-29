@@ -23,3 +23,7 @@ button {
 .orange-btns button {
   background-color: #f5913e;
 }
+
+button:active {
+  background-color: lightgray;
+}

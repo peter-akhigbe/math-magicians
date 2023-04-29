@@ -20,13 +20,13 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
+<!-- - [❓ FAQ (OPTIONAL)](#faq) -->
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -80,23 +80,23 @@ In order to run this project you need: Node.js
 
 ### Setup
 
-Clone this repository to your desired folder: git clone https://github.com/peter-akhigbe/math-magicians/
+Clone this repository to your desired folder: `git clone https://github.com/peter-akhigbe/math-magicians/`
 
 ### Install
 
-Install this project with: npm install
+Install this project with: `npm install`
 
 ### Usage
 
-To run the project, execute the following command: npm start
+To run the project, execute the following command: `npm start`
 
 ### Run tests
 
-To run tests, run the following command: N/A
+To run tests, run the following command: `npm test`
 
 ### Deployment
 
-You can deploy this project using: N/A
+You can deploy this project using: `npm deploy`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
