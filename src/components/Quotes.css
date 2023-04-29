@@ -1,0 +1,14 @@
+p {
+  color: white;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 20px;
+}
+
+.author {
+  margin-left: auto;
+}
