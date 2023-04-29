@@ -29,7 +29,9 @@ function Quotes() {
 
   return (
     <div className="quote-container">
-      <p className="quote">{loading ? 'Loading...' : data.quote || error}</p>
+      <p className="quote">
+        {loading ? 'Loading...' : data.quote || `Error: ${error.message}`}
+      </p>
       <p className="author">
         {loading === false && error === null ? `- ${data.author}` : ''}
       </p>
