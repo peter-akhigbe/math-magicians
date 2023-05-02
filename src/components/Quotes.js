@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './Quotes.css';
 
 function Quotes() {
   const [data, setData] = useState(null);
@@ -29,15 +28,25 @@ function Quotes() {
 
   useEffect(fetcher, []);
 
+  const styles = {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '20px',
+    padding: '0 5vw',
+  };
+
   return (
-    <div className="quote-container">
-      <p className="quote">
-        {loading ? 'Loading...' : `${data ? data.quote : error}`}
-      </p>
-      <p className="author">
-        {!loading && data ? `- ${data.author}` : null}
-      </p>
-    </div>
+    <>
+      <div
+        style={styles}
+        className="quote-container"
+      >
+        <p className="quote">{loading ? 'Loading...' : `${data ? data.quote : error}`}</p>
+        <p style={{ marginLeft: 'auto' }} className="author">
+          {!loading && data ? `- ${data.author}` : null}
+        </p>
+      </div>
+    </>
   );
 }
 

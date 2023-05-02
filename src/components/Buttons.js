@@ -1,4 +1,3 @@
-import './Buttons.css';
 import PropTypes from 'prop-types';
 
 const Buttons = (props) => {
