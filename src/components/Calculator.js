@@ -1,4 +1,3 @@
-import './Calculator.css';
 import React, { useState } from 'react';
 import Buttons from './Buttons';
 import DisplayResult from './DisplayResult';
@@ -16,10 +15,23 @@ const Calculator = () => {
     setState(calculate(state, buttonName));
   };
 
+  const divStyles = {
+    display: 'flex',
+    justifyContent: 'space-around',
+  };
+
+  const containerStyles = {
+    width: 'max-content',
+    backgroundColor: 'lightgray',
+  };
+
   return (
-    <div className="container">
-      <DisplayResult value={state.next || state.total || '0'} />
-      <Buttons clickHandler={clickHandler} />
+    <div style={divStyles}>
+      <h2>Let&apos;s do some math!</h2>
+      <div style={containerStyles} className="container">
+        <DisplayResult value={state.next || state.total || '0'} />
+        <Buttons clickHandler={clickHandler} />
+      </div>
     </div>
   );
 };
